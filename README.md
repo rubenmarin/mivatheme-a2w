@@ -26,7 +26,7 @@ Add to wishlist
 
 ### how to call this extension
   - example: PROD
-  ```
+  ```js
   $.loadScript(theme_path + 'build-extensions/wish-list/wish-list.js', function() {
     
     //im appending to window so i can test methods through console, but not required.
