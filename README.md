@@ -1,7 +1,7 @@
 # mivatheme-a2w
 Add to wishlist
 
- ##NOTES
+ ## NOTES
 
 
 
