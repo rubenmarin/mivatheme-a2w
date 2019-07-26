@@ -24,8 +24,9 @@ Add to wishlist
     - mivaJS.Miva_WISH_URL = '&mvtj:urls:WISH:auto;';
 
 
-###how to call this extension
+### how to call this extension
   - example: PROD
+  ```
   $.loadScript(theme_path + 'build-extensions/wish-list/wish-list.js', function() {
     
     //im appending to window so i can test methods through console, but not required.
@@ -34,4 +35,5 @@ Add to wishlist
       wishListButton : '.x-is-wishlist-button'
     });
   });
-*/
+  ```
+
