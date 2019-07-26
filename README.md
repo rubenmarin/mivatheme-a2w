@@ -1,9 +1,6 @@
-# mivatheme-a2w
-Add to wishlist
+# Add to wishlist 
 
- ## NOTES
-
-
+## NOTES
 
 ### UI Template:
 
