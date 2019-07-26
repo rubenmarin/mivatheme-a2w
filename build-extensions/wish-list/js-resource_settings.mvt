@@ -1,0 +1,13 @@
+theme_path = '&mvt:global:theme_path;/';
+
+(function (mivaJS) {
+	mivaJS.ReadyThemeVersion = '1.0.5.1';
+	mivaJS.Store_Code = '&mvtj:global:store:code;';
+	mivaJS.Product_Code = '&mvtj:product:code;';
+	mivaJS.Category_Code = '&mvtj:category:code;';
+	mivaJS.Customer_Login = '&mvtj:global:customer:login;';
+	mivaJS.Page = '&mvtj:page:code;';
+	mivaJS.Screen = '&mvtj:global:screen;';
+	mivaJS.Miva_WLST_URL = '&mvtj:urls:WLST:auto;'; 
+   mivaJS.Miva_WISH_URL = '&mvtj:urls:WISH:auto;';
+}(window.mivaJS || (window.mivaJS = {})));

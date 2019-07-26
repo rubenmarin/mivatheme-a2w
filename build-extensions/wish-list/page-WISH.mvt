@@ -1,0 +1,8 @@
+<mvt:comment>
+	Template:
+</mvt:comment>
+<mvt:if expr="AJAX EQ 1 AND GARAGE EQ 1">
+  <mvt:do file="g.Module_Feature_WSH_DB" name="l.success" value="Runtime_WishListProductList_Load_Offset_WishList(g.WishList_ID, null, 6 , null, null , g.wishlistProducts)" /> "products" :
+  <mvt:do file="g.Module_JSON" name="l.success" value="JSON_Output( g.wishlistProducts )" /> }
+  <mvt:exit />
+</mvt:if>

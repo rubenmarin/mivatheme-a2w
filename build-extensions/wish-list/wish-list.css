@@ -1,0 +1,193 @@
+/* disable wishlist button temporarily*/
+.x-is-wishlist-button,
+.x-wlst-disabled{
+	pointer-events: none;
+	opacity: 0.25;
+}
+.x-wish-list-loaded .x-is-wishlist-button{
+	pointer-events: initial;
+	opacity: 1;
+}
+.x-wish-list-login:before{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	content: " ";
+	z-index: -1;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.x-wlst-ajax--try .x-wish-list-login{
+	pointer-events: none;
+}
+.x-wlst-ajax--try .x-wish-list-login:before{
+	z-index: 10;
+	visibility: visible;
+	opacity: 0.5;
+}
+.x-is-wishlist-button button{
+	-webkit-transform: translateZ(0) scale(1);
+	        transform: translateZ(0) scale(1);
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: -webkit-transform 0.25s;
+	-o-transition: transform 0.25s;
+	transition: transform 0.25s;
+	transition: transform 0.25s, -webkit-transform 0.25s;
+}
+.was--added .x-is-wishlist-button button{
+	-webkit-transform: translateZ(0) scale(0.9);
+	        transform: translateZ(0) scale(0.9);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+/* */
+.x-wish-list--has-inputs input{
+	width: 100%;
+	min-height: 50px;
+	padding:0px 15px;
+	border:1px solid #cccccc;
+}
+
+/* LOGIN */
+.x-wish-list-login{
+	position: absolute;
+	min-width: 250px;
+	z-index: 1;
+	background: #fafafa;
+	z-index: 10;
+	top: calc(100% - 10px);
+	display: none;
+	-webkit-box-shadow: 0px 2px 22px 1px rgba(0,0,0,0.15);
+	        box-shadow: 0px 2px 22px 1px rgba(0,0,0,0.15);
+	padding: 15px 20px;
+	max-width: 75%;
+	right: 0;
+}
+.ie11 .x-wish-list-login{
+	border:1px solid rgba(0,0,0,0.25);
+}
+.show-wish-login .x-wish-list-login{
+	display: block;
+}
+.x-wish-list-login_fields > span{
+	margin-top: 10px;
+}
+.x-wish-list-login_forgot a{
+	color:#6b6b6b;
+	text-decoration: underline;
+}
+
+/**/
+.x-wish-list-add{
+	position: absolute;
+	display: none;
+	min-width: 264px;
+	max-width: 275px;
+	right:0;
+	-webkit-box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.25);
+	        box-shadow: 0px 0px 22px -10px rgba(0,0,0,0.25);
+	z-index: 10;
+	top:calc(100% - 15px);
+	background: #ffffff;
+	padding:20px;
+}
+.ie11 .x-wish-list-add{
+	border:1px solid rgba(0,0,0,0.25);
+}
+.x-wish-list-add .x-wish-list-items{
+	color:#777777;
+}
+.x-wish-list-add .x-wish-list-items b{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	border-top: 1px solid #EAEAEA;
+}
+.x-wish-list-add .x-wish-list-items b:first-of-type{
+	border-top: 0;
+}
+.x-wish-list-add_heading{
+	color: #000;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #EAEAEA;
+}
+.show-wish-list .x-wish-list-add{
+	display: block;
+}
+.x-wish-list-items-wrapper{
+	max-height: 140px;
+	overflow-y:scroll;
+}
+.x-wish-list-add .x-wish-list-items b:hover {
+	color: #000;
+}
+.x-wish-list_item{
+	position: relative;
+}
+.x-wish-list_item i{
+	position: absolute;
+	right:0;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+.x-wish-list-create-link{
+	color: #1A24F7;
+	display: block;
+	border-top: 1px solid #efefef;
+	padding-top: 15px;
+	text-decoration: none;
+	line-height: normal;
+}
+.x-wish-list-create-link i{
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 9px;
+}
+.x-wish-list-create-link:hover{
+	text-decoration: none;
+}
+
+
+/*
+	x-wish-list-add
+*/
+
+.x-wish-list-creating{
+	position: absolute;
+	top:calc(100% - 10px);
+	right:0;
+	max-width: 275px;
+	background: #fafafa;
+	padding:20px;
+	z-index: 10;
+	-webkit-box-shadow: 0px 2px 22px 1px rgba(0,0,0,0.15);
+	        box-shadow: 0px 2px 22px 1px rgba(0,0,0,0.15);
+	display: none;
+}
+.ie11 .x-wish-list-creating{
+	border:1px solid rgba(0,0,0,0.25);
+}
+.show--create .x-wish-list-creating{
+	display: block;
+}
+.x-wish-list-creating input{
+	width: 100%;
+}
+.x-wish-list-creating .o-layout__item{
+	margin-top: 10px;
+}
+.x-wish-list-create_fields > .o-layout__item:first-of-type{
+	margin-top: 0;
+}
+.x-wish-creating-cancel-link{
+	color: #6b6b6b;
+	text-decoration: underline;
+}

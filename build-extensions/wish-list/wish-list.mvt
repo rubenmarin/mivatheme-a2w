@@ -1,0 +1,54 @@
+<mvt:comment>
+	ADD TO WISHLIST ELEMENTS
+</mvt:comment>
+<div class="x-wish-list-login x-wish-list--has-inputs">
+	<!-- <span class="o-layout x-wish-list_heading">
+		<span class="o-layout__item u-text-uppercase f-size-12">Sign in to add to your wish list</span>
+	</span> -->
+	<span class="o-layout x-wish-list-login_fields">
+		<span class="o-layout__item u-width-12"><input class="x-is-wlst-input" type="email" autocomplete="email" placeholder="Email" name="Customer_LoginEmail"></span>
+		<span class="o-layout__item u-width-12"><input class="x-is-wlst-input" type="password" autocomplete="current-password" placeholder="Password" name="Customer_Password"></span>
+		<span class="o-layout__item u-width-12">
+			<button class="c-button c-button--full x-wish-list_button x-is-wlst-button">Sign In</button>
+		</span>
+		<span class="o-layout__item u-width-12">
+			<a href="&mvte:urls:LOGN:secure;" target="_blank" class="c-button c-button--full outline black" href="">Register</a>
+		</span>
+		<span class="o-layout__item u-text-center x-wish-list-login_forgot f-size-15 u-width-12">
+			<a href="&mvte:urls:FPWD:secure;" target="_blank">Forgot Password?</a>
+		</span>
+	</span>
+</div>
+<div class="x-wish-list-creating x-wish-list--has-inputs">
+	<!-- <span class="o-layout o-layout--flush x-wish-list-create_heading">
+		<span class="o-layout__item u-text-uppercase f-size-12 u-4-font u-text-bold">Add To a Wish List</span>
+	</span> -->
+	<span class="o-layout x-wish-list-create_fields">
+		<span class="o-layout__item u-width-12"><input class="x-is-wlst-input" type="text" required placeholder="Name" name="WishList_Title"></span>
+		<span class="o-layout__item u-width-12"><input class="x-is-wlst-input" type="text" placeholder="Notes" name="WishList_Notes"></span>	
+		<span class="o-layout__item u-width-12"><button class="x-wish-list-create_button c-button c-button--full x-is-wlst-button">Create & Add</button></span>
+		<span class="o-layout__item u-text-center x-wish-creating-cancel u-text-center f-size-15 u-width-12">
+			<a class="x-wish-creating-cancel-link">Cancel</a>
+		</span>
+	</span>
+	
+</div>
+<div class="x-wish-list-add">
+	<!-- <span class="x-wish-list-add-wrapper u-block"> -->
+		<span class="o-layout o-layout--flush x-wish-list-add_heading">
+			<span class="o-layout__item u-text-uppercase f-size-12 ls-0210em u-4-font u-text-bold">Add To Wishlist</span>
+		</span>
+		<span class="x-wish-list-items-wrapper u-block">
+			<span class="o-layout x-wish-list-items f-size-11">
+			<!-- items are added here -->
+			</span>	
+		</span>
+		<span class="o-layout x-wish-list-create u-3-font f-size-11 u-text-uppercase">
+			<span class="o-layout__item"><a class="x-wish-list-create-link"><i class="dppicons--list"></i>Create New List</a></span>
+		</span>	
+	<!-- </span> -->
+</div>
+
+
+
+

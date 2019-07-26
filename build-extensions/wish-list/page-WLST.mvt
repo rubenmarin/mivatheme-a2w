@@ -1,0 +1,23 @@
+<mvt:comment>
+	Template:
+</mvt:comment>
+<mvt:if expr="g.AJAX EQ 1">
+	<mvt:item name="wishlists" />
+	<mvt:exit />
+</mvt:if>
+
+<mvt:comment>
+	Wish Lists Layout:
+</mvt:comment>
+<mvt:if expr="g.Ajax EQ 1">
+	<mvt:assign name="l.settings:wishlists:customerID" value="g.customer:id" />
+	<mvt:assign name="l.settings:wishlists:customerLogin" value="g.customer:login" />
+	<mvt:if expr="miva_array_elements( l.settings:wishlists:items )">
+		<mvt:foreach iterator="item" array="wishlists:items">
+			<mvt:assign name="l.settings:item:title" value="encodeentities(l.settings:item:title)" />
+			<mvt:assign name="l.settings:item:notes" value="encodeentities(l.settings:item:notes)" />
+		</mvt:foreach>	
+	</mvt:if>
+	<mvt:do file="g.Module_JSON" name="l.success" value="JSON_Output( l.settings:wishlists )" />
+	<mvt:exit />
+</mvt:if>
